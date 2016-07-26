@@ -5,16 +5,14 @@
 
 
 # Add MINGW to path if is not set
-#export PATH=${PATH}:/r/my-mingw-folder/bin
-. set-gcc32
+export PATH=${PATH}:/r/my-mingw-folder/bin
 
 # Set the system for the ./config script, 
 # use "mingw64" for x64 build
 export SYSTEM="mingw"
 
 # Go in openssl folder
-#cd my-openssl-path
-cd ..
+cd my-openssl-path
 
 # Clean Build
 make clean
